@@ -1,0 +1,8 @@
+<!-- snippet-embed-metafields.liquid -->
+
+{% assign metafield_key = 'warehouse' %}
+
+{% if product.metafields.global[metafield_key] %}
+  {% assign metafield_value = product.metafields.global[metafield_key] %}
+  {{ metafield_value }}
+{% endif %}
